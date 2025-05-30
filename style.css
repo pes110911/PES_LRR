@@ -1,0 +1,151 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover; /* Background image */
+}
+
+/* Overlay effect for better readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: -1;
+}
+
+.login-container {
+    background: linear-gradient(135deg, rgba(86, 84, 84, 0.7) 20%, rgba(0, 77, 0, 0.7)); /* Gradient background with transparency */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    min-height: 650px; /* Added height */
+    position: relative;
+    text-align: center;
+    color: #ffffff; /* White text for better contrast */
+}
+
+.school-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    font-weight: 600;
+    color: hsl(58, 96%, 51%);
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #014614;
+    color: #ede903;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .login-box {
+        width: 90%;
+    }
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+    border-radius: 3px;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 7px;
+    border-radius: 5px;
+    background: rgba(0, 34, 1, 0.936); /* Facebook blue */
+}
+
+.social-links a:hover {
+    background: #1255a2b8;
+}
+
+.contact-info {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.contact-info a {
+    color: #eaff00; /* Green color */
+    font-weight: bold;
+    text-decoration: none;
+}
+.developer-info {
+    font-size: 10px;
+    color: #ffffffcc; /* Slightly transparent white */
+    margin-top: auto;
+    padding-top: 10px;
+}
+    
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.resource-container {
+    margin-top: 5px;
+    padding: 5px;
+    border: 2px solid #ccc; /* Optional: light gray border for separation */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #054d0253; /* Optional: subtle background color */
+    text-align: center;
+}

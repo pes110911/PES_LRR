@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Learning Resources Repository</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .resource-buttons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    text-align: center; /* Center text inside child elements */
+}
+
+.resource-buttons p {
+    width: 100%; /* Make the title span the full width */
+    font-size: 1.4em; /* Slightly larger font size */
+    font-weight: bold; /* Bold text */
+    color: rgb(250, 245, 245); /* Font color set to black */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.resource-button {
+    margin: 10px;
+    text-decoration: none;
+    text-align: center; /* Center text inside each button */
+}
+
+        
+.resource-button img {
+    max-width: 100%; /* Responsive: take full width of the container */
+    width: auto; /* Let it scale naturally */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .resource-button img {
+        max-width: 320px; /* On larger screens, cap the max width */
+    }
+}
+
+        .resource-button img:hover {
+            transform: scale(1.1); /* Use 1.1 instead of 3.3 for a smoother hover */
+        }
+        .resource-label {
+            margin-top: 8px; /* Slightly more space between image and label */
+            font-size: 14px;
+            font-weight: 700;
+            color: #faf9f9;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="pes-logo.png" alt="School Logo" class="school-logo">
+        <h1>PANITIAN ELEMENTARY SCHOOL</h1>
+        <h2>Learning Resources Repository</h2>
+
+        <form id="loginForm">
+            <label for="username">Enter your LRN or Username and click Login:</label>
+            <input type="text" id="username" placeholder="Type here your LRN or Username" required>
+            <p id="error-message"></p> <!-- Display error messages dynamically -->
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Updated resource buttons section -->
+        <div class="resource-container">
+            <div class="resource-buttons">
+                <p>Other Learning Resources Repository</p>
+                <a href="https://lrms.depedpalawan.com.ph/?fbclid=IwY2xjawKiVKpleHRuA2FlbQIxMQBicmlkETA4cFhGN0NRMm5wMEpYa0xUAR5mrhV6FfTJli4nU0HvhqW7C7N610JG5waXaM5hDa1giVxol5cPLe3LgvXPbw_aem_VOaG0lwWFkD1Tha0YhmynQ" class="resource-button" target="_blank">
+                    <img src="sdo-palawan-button.png" alt="SDO Palawan LRMS">
+                    <span class="resource-label">SDO Palawan LRMS Portal</span>
+                </a>
+                <a href="https://lrms.depedmimaroparegion.ph/index.php" class="resource-button" target="_blank">
+                    <img src="mimaropa-region-button.png" alt="MIMAROPA Region LRMS">
+                    <span class="resource-label">MIMAROPA Region LRMS Portal</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://web.facebook.com/110911PES" target="_blank">Facebook Page</a> |
+            <a href="https://sites.google.com/deped.gov.ph/panitianelementaryschool-11091/home" target="_blank">School Website</a>
+        </div> 
+        <div class="contact-info">
+            <p>Contact us: <a href="+639-685-241-861">+639-685-241-861</a></p>
+        </div>
+        
+        <div class="developer-info">
+            <p>Developed by: Toy Lalong-isip</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
